@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Aboutus</title>
+{% endblock %}
+{% block content %}
+    <h1>This is My AboutUs Page</h1><br>
+    <a href="{% url 'GenInsuranceApp:GenInsuranceApp-login' %}" class="btn btn-primary" role="button">Signin</a>
+<a href="{% url 'GenInsuranceApp:GenInsuranceApp-home' %}" class="btn btn-primary" role="button">Home</a>
+{% endblock %}

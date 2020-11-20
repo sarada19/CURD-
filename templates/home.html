@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+body {
+    background-image: url("/static/images/total2.jpg");
+}
+</style>
+{% endblock %}
+{% block content %}
+
+    <h1 align="center">Here to start to Insurance</h1>
+    <div class="alert alert-warning">
+    <strong>
+        <a href="{% url 'GenInsuranceApp:GenInsuranceApp-aboutus' %}" class="btn btn-primary" role="button">AboutUs</a>
+        <a href="{% url 'GenInsuranceApp:GenInsuranceApp-login' %}" class="btn btn-primary" role="button">Login</a>
+        <a href="{% url 'GenInsuranceApp:GenInsuranceApp-signup' %}" class="btn btn-primary" role="button">Register</a>
+    </strong>
+    </div>
+
+
+
+
+{% endblock %}

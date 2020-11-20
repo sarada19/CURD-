@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST">
+{% csrf_token %}
+    <p align="right"> <a href="{% url 'GenInsuranceApp:GenInsuranceApp-logout' %}" class="btn btn-danger" role="button">Logout</a>
+     <a align="right" href="{% url 'GenInsuranceApp:GenInsuranceApp-mainmenu' %}" class="btn btn-danger" role="button">Mainmenu</a></p>
+{{ vform }}
+</form>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 align="center">Logged Out</h1>
+<br><br>
+    <a href="{% url 'GenInsuranceApp:GenInsuranceApp-home' %}" class="btn btn-primary" role="button">Home</a><br>
+<a href="{% url 'GenInsuranceApp:GenInsuranceApp-login' %}" class="btn btn-primary" role="button">Login</a>
+
+{% endblock %}

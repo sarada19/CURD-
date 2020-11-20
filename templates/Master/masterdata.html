@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MasterPage</title>
+</head>
+<body>
+<h2>This is my Master Page</h2>
+<p align="right"> <a href="{% url 'GenInsuranceApp:GenInsuranceApp-logout' %}" class="btn btn-danger" role="button">Logout</a>
+     <a align="right" href="{% url 'GenInsuranceApp:GenInsuranceApp-mainmenu' %}" class="btn btn-danger" role="button">Mainmenu</a></p>
+    <p align="center"><a href="{% url 'master:master-ProductMaster' %}" class="btn btn-primary" role="button">Product</a></p>
+<p align="center"><a href="{% url 'master:master-ProductRisk' %}" class="btn btn-primary" role="button">Product Risks</a></p>
+<p align="center"><a href="{% url 'master:master-AgentCreate' %}" class="btn btn-primary" role="button">Create Agent</a></p>
+<p align="center"><a href="{% url 'master:master-AgentCommision' %}" class="btn btn-primary" role="button">Agent Commision</a></p>
+<p align="center"><a href="{% url 'master:master-vehicleMasterView' %}" class="btn btn-primary" role="button">Vehicle Master</a></p>
+<p align="center"><a href="{% url 'master:master-vehicleDepreciationView' %}" class="btn btn-primary" role="button">Vehicle Depriciation</a></p>
+<p align="center"><a href="{% url 'master:master-NCBMasterView' %}" class="btn btn-primary" role="button">NCB Master</a></p>
+<p align="center"><a href="{% url 'master:master-ClaimStatusMasterView' %}" class="btn btn-primary" role="button">Cliam Stastus Master</a></p>
+<p align="center"><a href="{% url 'master:master-ClaimsSurveyorMasterView' %}" class="btn btn-primary" role="button">Cliam Surveyor Master</a></p>
+</body>
+</html>

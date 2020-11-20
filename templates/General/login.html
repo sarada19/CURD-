@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Login</title>
+{% endblock %}
+style{
+{% block content %}
+    <form method="POST">
+    {% csrf_token %}
+        <fieldset>
+            <legend><b>User Login</b></legend>
+                Username:<input type="text" name="username"/>
+                <br/><br/>
+                Password:<input type="password" name="password">
+                <br/><br/>
+                <input type="submit" value="signin">
+        </fieldset>
+    </form>
+<br>
+<a href="{% url 'GenInsuranceApp:GenInsuranceApp-signup' %}" class="btn btn-primary" role="button">Register</a>
+<a href="{% url 'GenInsuranceApp:GenInsuranceApp-home' %}" class="btn btn-primary" role="button">Home</a>
+
+
+{% endblock %}
+

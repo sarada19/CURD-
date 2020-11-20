@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MasterPage</title>
+</head>
+<body>
+<h2 align="center">This is my underwriter Page</h2>
+<p align="right"> <a href="{% url 'GenInsuranceApp:GenInsuranceApp-logout' %}" class="btn btn-danger" role="button">Logout</a>
+     <a align="right" href="{% url 'GenInsuranceApp:GenInsuranceApp-mainmenu' %}" class="btn btn-danger" role="button">Mainmenu</a></p>
+    <p align="center"><a href="{% url 'underwriter:CreateInsured' %}" class="btn btn-primary" role="button">Create Insured</a></p>
+<p align="center"><a href="{% url 'underwriter:PolicyCreate' %}" class="btn btn-primary" role="button">Policy Create</a></p>
+</body>
+</html>
