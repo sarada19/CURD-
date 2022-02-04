@@ -233,43 +233,17 @@ class ClaimsSurveyorMasterForm(forms.ModelForm):
     class Meta:
         model = ClaimsSurveyorMaster
         fields='__all__'
-        #     [
-        #     'surveyor_id',
-        #     'surveyor_name',
-        #     'surveyor_city',
-        #     'surveyor_qualificaition',
-        #     'surveyor_brach_code'
-        #     'phone',
-        #     'created_by',
-        #     'last_updated_by'
-        # ]
+        '''    [
+             'surveyor_id',
+             'surveyor_name',
+             'surveyor_city',
+             'surveyor_qualificaition',
+             'surveyor_brach_code'
+             'phone',
+             'created_by',
+             'last_updated_by'
+         ]
+        '''
         exclude = [
             'created_by','last_updated_by','surveyor_id'
         ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
